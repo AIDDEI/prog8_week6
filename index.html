@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+
+    <script defer type="module" src="./src/index.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Decision Tree</title>
+</head>
+<body>
+
+    <hr>
+    <h2 class="header">Decision Tree</h2>
+    <hr>
+    <br>
+
+    <div id="view">
+    </div>
+    <br>
+
+    <hr>
+    <div id="accuracy" class="accuracy">
+    </div>
+    <hr>
+    <br>
+
+    <div>
+        <h3>Confusion Matrix</h3>
+        <br>
+        <table id="confusion">
+            <tr>
+                <td></td>
+                <td>Eetbaar Voorspeld</td>
+                <td>Giftig Voorspeld</td>
+            </tr>
+            <tr>
+                <td>Echt Eetbaar</td>
+                <td id="realEdible">-</td>
+                <td id="fakePoisonous">-</td>
+            </tr>
+            <tr>
+                <td>Echt Giftig</td>
+                <td id="fakeEdible">-</td>
+                <td id="realPoisonous">-</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <a href="user_predictions.html">Voer je eigen gegevens in voor een voorspelling</a>
+
+    <hr>
+    <footer>
+        <p>Deze website is gemaakt door Aiden Deighton, student Creative Media & Game Technologies aan de Hogeschool Rotterdam.</p>
+        <div class="socials">
+            <div><a href="mailto:1025660@hr.nl">E-mail</a></div>
+            <div><a href="https://www.instagram.com/aiddei/" target="_blank">Instagram</a></div>
+            <div><a href="https://nl.linkedin.com/in/aiden-deighton-081669234?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></div>
+            <div><a href="https://github.com/AIDDEI/" target="_blank">GitHub</a></div>
+        </div>
+        <p id="copyright">© 2023 - Aiden Deighton</p>
+    </footer>
+    <hr>
+
+</body>
+</html>

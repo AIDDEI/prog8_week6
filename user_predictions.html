@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script defer type="module" src="./src/user.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Is deze paddestoel eetbaar?</title>
+</head>
+<body>
+
+    <hr>
+    <h2 class="header">Is deze paddestoel eetbaar?</h2>
+    <hr>
+    <br>
+
+    <div>
+        <h3>Voer de velden in</h3>
+        <br><br>
+
+        <label for="capShape">Vorm van de kap:</label>
+        <select name="capShape" id="capShape">
+            <option value="b">Klok</option>
+            <option value="c">Kegelvormig</option>
+            <option value="x">Bolrond</option>
+            <option value="f">Plat</option>
+            <option value="k">Knobbelig</option>
+            <option value="s">Gezonken</option>
+        </select>
+        <br><br>
+        
+
+        <label for="capSurface">Oppervlakte van de kap:</label>
+        <select name="capSurface" id="capSurface">
+            <option value="f">Vezelig</option>
+            <option value="g">Groeven</option>
+            <option value="y">Geschubd</option>
+            <option value="s">Glad</option>
+        </select>
+        <br><br>
+
+        <label for="bruises">Kneuzingen:</label>
+        <select name="bruises" id="bruises">
+            <option value="t">Ja</option>
+            <option value="f">Nee</option>
+        </select>
+        <br><br>
+
+        <label for="odor">Geur:</label>
+        <select name="odor" id="odor">
+            <option value="a">Amandel</option>
+            <option value="l">Anijs</option>
+            <option value="c">Creosoot</option>
+            <option value="y">Visachtig</option>
+            <option value="f">Gek</option>
+            <option value="m">Muf</option>
+            <option value="n">Geen</option>
+            <option value="p">Scherp</option>
+            <option value="s">Pittig</option>
+        </select>
+        <br><br>
+
+        <label for="gillSpacing">Kieuwafstand:</label>
+        <select name="gillSpacing" id="gillSpacing">
+            <option value="c">Dichtbij</option>
+            <option value="w">Vol</option>
+            <option value="d">Ver</option>
+        </select>
+        <br><br>
+
+        <label for="gillSize">Kieuw grootte:</label>
+        <select name="gillSize" id="gillSize">
+            <option value="b">Breed</option>
+            <option value="n">Smal</option>
+        </select>
+        <br><br>
+
+        <label for="stalkShape">Stengel grootte:</label>
+        <select name="stalkShape" id="stalkShape">
+            <option value="e">Vergrotend</option>
+            <option value="t">Taps toelopend</option>
+        </select>
+        <br><br>
+
+        <label for="stalkRoot">Stengel grootte:</label>
+        <select name="stalkRoot" id="stalkRoot">
+            <option value="b">Bolvormig</option>
+            <option value="c">Knots</option>
+            <option value="u">Kopje</option>
+            <option value="e">Gelijk</option>
+            <option value="z">Rhizomorfen</option>
+            <option value="r">Geworteld</option>
+            <option value="?">Missend</option>
+        </select>
+        <br><br>
+
+        <label for="stalkSurfaceAboveRing">Stengeloppervlak boven ring:</label>
+        <select name="stalkSurfaceAboveRing" id="stalkSurfaceAboveRing">
+            <option value="f">Vezelig</option>
+            <option value="y">Geschubd</option>
+            <option value="k">Zijdezacht</option>
+            <option value="s">Glad</option>
+        </select>
+        <br><br>
+
+        <label for="stalkSurfaceBelowRing">Stengeloppervlak onder ring:</label>
+        <select name="stalkSurfaceBelowRing" id="stalkSurfaceBelowRing">
+            <option value="f">Vezelig</option>
+            <option value="y">Geschubd</option>
+            <option value="k">Zijdezacht</option>
+            <option value="s">Glad</option>
+        </select>
+        <br><br>
+
+        <label for="ringType">Ringtype:</label>
+        <select name="ringType" id="ringType">
+            <option value="c">Spinnewebachtig</option>
+            <option value="e">Verdwijnend</option>
+            <option value="f">Oplaaiend</option>
+            <option value="l">Groot</option>
+            <option value="n">Geen</option>
+            <option value="p">Hangend</option>
+            <option value="s">Omhulsel</option>
+            <option value="z">Zone</option>
+        </select>
+        <br><br>
+
+        <label for="population">Natuurlijke bevolking:</label>
+        <select name="population" id="population">
+            <option value="a">Overvloedig</option>
+            <option value="c">Geclusterd</option>
+            <option value="n">Talrijk</option>
+            <option value="s">Verspreid</option>
+            <option value="v">Meerdere</option>
+            <option value="y">Eenzaam</option>
+        </select>
+        <br><br>
+
+        <label for="habitat">Leefgebied:</label>
+        <select name="habitat" id="habitat">
+            <option value="g">Grassen</option>
+            <option value="l">Bladeren</option>
+            <option value="m">Weiden</option>
+            <option value="p">Paden</option>
+            <option value="u">Stedelijk</option>
+            <option value="w">Wildernis</option>
+            <option value="d">Bossen</option>
+        </select>
+        <br><br>
+
+        <button class="button" id="predictButton">Voorspel eetbaarheid van de paddestoel</button>
+
+    </div>
+
+    <section id="prediction" class="prediction">
+    </section>
+    <br>
+
+    <hr>
+    <footer>
+        <p>Deze website is gemaakt door Aiden Deighton, student Creative Media & Game Technologies aan de Hogeschool Rotterdam.</p>
+        <div class="socials">
+            <div><a href="mailto:1025660@hr.nl">E-mail</a></div>
+            <div><a href="https://www.instagram.com/aiddei/" target="_blank">Instagram</a></div>
+            <div><a href="https://nl.linkedin.com/in/aiden-deighton-081669234?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></div>
+            <div><a href="https://github.com/AIDDEI/" target="_blank">GitHub</a></div>
+        </div>
+        <p id="copyright">© 2023 - Aiden Deighton</p>
+    </footer>
+    <hr>
+
+</body>
+</html>
