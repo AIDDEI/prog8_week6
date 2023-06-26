@@ -24,7 +24,7 @@ let fakeEdible = document.getElementById("fakeEdible");
 let fakePoisonous = document.getElementById("fakePoisonous");
 
 // Data
-const csvFile = "../data/mushrooms.csv";
+const csvFile = "data/mushrooms.csv";
 const trainingLabel = "class";
 const ignored = ['class', 'cap-color', 'gill-attachment', 'gill-color', 'stalk-color-above-ring', 'stalk-color-below-ring', 'veil-type', 'veil-color', 'ring-number', 'spore-print-color'];
 

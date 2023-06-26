@@ -15,7 +15,7 @@ predictionPlaceholder.appendChild(p);
 
 // Load model
 function loadSavedModel() {
-    fetch("../model/model.json")
+    fetch("model/model.json")
         .then((response) => response.json())
         .then((model) => modelLoaded(model))
 }
